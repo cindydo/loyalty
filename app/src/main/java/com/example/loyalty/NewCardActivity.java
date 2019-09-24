@@ -52,6 +52,7 @@ public class NewCardActivity extends AppCompatActivity {
         if (id == R.id.action_save) {
             // Save card
             saveCard();
+            navToMain();
         }
         else if (id == R.id.action_cancel) {
             // Cancel new card

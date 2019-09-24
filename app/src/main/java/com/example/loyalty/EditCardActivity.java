@@ -55,10 +55,6 @@ public class EditCardActivity extends AppCompatActivity {
             saveCard();
             navToMain();
         }
-        else if (id == R.id.action_cancel) {
-            // Cancel card edit
-            navToMain();
-        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -70,7 +66,7 @@ public class EditCardActivity extends AppCompatActivity {
      */
     public void navToMain() {
         Intent intent = new Intent(this, MainActivity.class);
-        this.startActivity(intent);
+        startActivity(intent);
     }
 
     /*
