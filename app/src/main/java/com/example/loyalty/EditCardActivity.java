@@ -81,9 +81,9 @@ public class EditCardActivity extends AppCompatActivity {
      */
     public void saveCard() {
         card.setName(editTextCardName.getText().toString());
-        card.setBarcodeNumber(editTextCardName.getText().toString());
-        card.setBarcodeFormat(editTextCardName.getText().toString());
-        card.setNotes(editTextCardName.getText().toString());
+        card.setBarcodeNumber(editTextCardNumber.getText().toString());
+        card.setBarcodeFormat(card.getBarcodeFormat());
+        card.setNotes(editTextCardNotes.getText().toString());
 
         // Update card
         db.updateCard(card);
